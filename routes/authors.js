@@ -50,7 +50,6 @@ router.get('/:id', async (req, res) => {
     } catch {
         res.redirect('/');
     }
-    
 });
 
 router.get('/:id/edit', async (req, res) => {
