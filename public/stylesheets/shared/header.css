@@ -1,14 +1,15 @@
 :root {
     --nav-title-font-size: 3rem;
     --nav-title-font-weight: bold;
-    --nav-link-font-weight: 300;
+    --nav-link-font-weight: 600;
 }
 
 .header-title {
-    color: var(--color-text-light);
+    color: var(--white);
     text-decoration: none;
     font-size: var(--nav-title-font-size);
     font-weight: var(--nav-title-font-weight);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .header-nav {
@@ -17,6 +18,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+    margin-top: 3rem;
+    
 }
 
 .header-nav ul {
@@ -27,18 +30,44 @@
 
 .header-nav li {
     list-style: none;
+    
 }
 
 
 .header-nav li a {
-    color: var(--color-text-light);
+    color: var(--white);
     text-decoration: none;
     font-weight: var(--nav-link-font-weight);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     padding: 1rem;
+
 }
 
-.header-nav li a:hover,
-.header-title:hover {
-    color: #FFF;
+.header-nav li:hover {
+    transform: scale(0.9);
+    transition: 200ms ease-in-out;
 }
 
+@media (max-width: 600px) {
+    .header-nav{
+        flex-direction: column;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .header-title {
+        font-size: 4rem;
+    }
+    .header-nav ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 90%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .header-nav li a{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
