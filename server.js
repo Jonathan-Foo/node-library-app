@@ -26,8 +26,6 @@ mongoose.connect(process.env.DATABASE_URL)
 // db.on('error', error => console.error(error));
 // db.on('open', () => console.log('Connected To Mongoose'));
 
-
-
 app.use('/', indexRouter);
 app.use('/authors', authorRouter);
 app.use('/books', bookRouter);
