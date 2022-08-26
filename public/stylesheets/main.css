@@ -4,6 +4,7 @@
 @import 'shared/button.css';
 @import 'shared/form.css';
 @import 'shared/author.css';
+@import 'shared/books.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800&display=swap');
 
@@ -39,4 +40,8 @@ body{
     font-size: 2rem;
     font-weight: 600;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
 }
